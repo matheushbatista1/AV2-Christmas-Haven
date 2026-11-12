@@ -1,0 +1,56 @@
+@media(max-width:1000px){
+.grade-produtos{grid-template-columns:repeat(3,1fr)}
+.hero-conteudo{max-width:540px}
+.menu{gap:18px}
+}
+@media(max-width:700px){
+.menu a,.faixa-info div{font-size:18px}
+.card h3{font-size:21px}
+.card p,.btn,.btn-card,.btn-detalhe,button{font-size:16px}
+.tag-categoria{font-size:13px}
+.banner-chamada{flex-direction:column;text-align:center;gap:28px;padding:48px 25px}
+.banner-ilustra{flex:none;width:100%}
+.historia-ilustra img,.historia-ilustra{min-height:230px}
+.equipe-grade{gap:28px}
+.topo{height:70px;padding:0 18px}
+.btn-menu{display:block;order:3}
+.menu{display:none;position:absolute;top:70px;left:0;right:0;padding:18px 25px;flex-direction:column;gap:5px;box-shadow:0 12px 18px #0001;background:#0d1424;border-bottom:1px solid #a9d8cf30}
+.menu.aberto{display:flex}
+.hero{min-height:600px;padding:115px 26px 75px}
+.hero h1{font-size:52px}
+.hero-rodape{left:26px}
+.slide.ativo{flex-direction:column;gap:22px;padding:22px;text-align:center}
+.slide>img,.oferta-img{width:100%}
+.faixa-info{gap:14px;flex-wrap:wrap;padding:20px}
+.secao{padding:60px 22px}
+.cabecalho-secao{align-items:start;gap:15px;flex-direction:column}
+.cabecalho-secao h2,.secao h2,.banner-chamada h2{font-size:32px}
+.grade-produtos{grid-template-columns:1fr;gap:18px}
+.card-info{padding:12px}
+.card-acoes{flex-direction:column}
+.rodape{grid-template-columns:1fr 1fr;padding:40px 25px}
+.rodape>div:first-child{grid-column:1/-1}
+.titulo-pagina{padding:65px 22px 48px}
+.titulo-pagina h1{font-size:43px}
+.filtros{flex-wrap:wrap}
+.busca{flex-basis:100%}
+.filtros select{flex:1;min-width:0}
+.carrinho-resumo{flex:1;justify-content:center}
+.carrinho-box{align-items:start;gap:12px;flex-direction:column}
+.historia{grid-template-columns:1fr;gap:35px}
+.valores,.galeria{grid-template-columns:1fr}
+.foto,.foto-grande,.foto-grande+.foto{grid-column:auto}
+.foto b{font-size:22px}
+.oferta{flex-direction:column;gap:20px}
+.contato{grid-template-columns:1fr;gap:45px}
+.contato form{padding:24px}
+.hero-selo{left:26px}
+.acoes{align-items:stretch;flex-direction:column;max-width:280px}
+}
+@media(max-width:480px){
+.painel-musica{right:14px;bottom:68px}
+}
+@media(max-width:390px){
+.card-acoes{flex-direction:row}
+.hero h1{font-size:45px}
+}

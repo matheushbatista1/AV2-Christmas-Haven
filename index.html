@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#173d2c" name="theme-color"/>
+  <title>
+   Início | Christmas Haven
+  </title>
+  <link href="img/favicon.svg" rel="icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/responsivo.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topo">
+   <a class="marca" href="index.html">
+    <span class="marca-icone">
+     ✦
+    </span>
+    <span>
+     Christmas
+     <b>
+      Haven
+     </b>
+     <small>
+      CONFEITARIA NATALINA
+     </small>
+    </span>
+   </a>
+   <button aria-label="Abrir menu" class="btn-menu">
+    ☰
+   </button>
+   <nav class="menu">
+    <a href="index.html">
+     Início
+    </a>
+    <a href="produtos.html">
+     Produtos
+    </a>
+    <a href="sobre.html">
+     História
+    </a>
+    <a href="galeria.html">
+     Galeria
+    </a>
+    <a href="contato.html">
+     Contato
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="hero">
+    <div class="hero-selo">
+     FEITO COM CARINHO PARA O SEU NATAL
+    </div>
+    <div class="hero-conteudo">
+     <p class="sobretitulo">
+      A magia mora nos detalhes
+     </p>
+     <h1>
+      O sabor do Natal
+      <br/>
+      <em>
+       está aqui.
+      </em>
+     </h1>
+     <p>
+      Receitas artesanais, ingredientes especiais e doces feitos para transformar encontros em lembranças.
+     </p>
+     <div class="acoes">
+      <a class="btn btn-dourado" href="produtos.html">
+       Comprar
+       <span>
+        →
+       </span>
+      </a>
+      <button aria-controls="painel-musica" aria-expanded="false" class="btn btn-contorno" id="btn-musica">
+       ♫ Música
+      </button>
+     </div>
+    </div>
+    <div class="hero-decor" data-velocidade="0.08">
+     <div class="guirlanda">
+      ✧
+     </div>
+     <div class="hero-card">
+      <span>
+       ✦
+      </span>
+      <strong>
+       Uma temporada
+       <br/>
+       mais doce
+      </strong>
+      <small>
+       EDIÇÃO DE NATAL 2026
+      </small>
+     </div>
+    </div>
+    <div class="hero-rodape">
+     PANETONES · BISCOITOS · BOLOS · PRESENTES
+    </div>
+   </section>
+   <section aria-label="Música de Natal" class="painel-musica" hidden id="painel-musica">
+   <div class="musica-acoes">
+    <button id="btn-silenciar" type="button">Mudo</button>
+    <button id="btn-pausar-musica" type="button">Pausar</button>
+    <button aria-label="Fechar música" id="btn-fechar-musica" type="button">×</button>
+   </div>
+   <div class="visual-musica" aria-hidden="true"><span>♫</span><span>♪</span><span>♫</span><span>♬</span><span>♪</span></div>
+  </section>
+   <section class="faixa-info">
+    <div>
+     ✦
+     <span>
+      Produção artesanal
+     </span>
+    </div>
+    <div>
+     ✧
+     <span>
+      Ingredientes selecionados
+     </span>
+    </div>
+    <div>
+     ❄
+     <span>
+      Feito para compartilhar
+     </span>
+    </div>
+   </section>
+   <section class="slideshow secao">
+    <div class="slide ativo">
+     <img src="img/slide-panetones.jpg" alt="Panetone decorado com frutas cristalizadas" loading="lazy">
+     <div>
+      <small>
+       TRADIÇÃO DE NATAL
+      </small>
+      <h2>
+       Panetones feitos para compartilhar.
+      </h2>
+      <a href="produtos.html">
+       Descobrir sabores →
+      </a>
+     </div>
+    </div>
+    <div class="slide">
+     <img src="img/slide-biscoitos.jpg" alt="Biscoitos natalinos em uma travessa de madeira" loading="lazy">
+     <div>
+      <small>
+       PEQUENOS ENCANTOS
+      </small>
+      <h2>
+       Biscoitos que têm gosto de infância.
+      </h2>
+      <a href="produtos.html">
+       Ver biscoitos →
+      </a>
+     </div>
+    </div>
+    <div class="slide">
+     <img src="img/slide-caixas.jpg" alt="Caixa de presente com doces e biscoitos de Natal" loading="lazy">
+     <div>
+      <small>
+       PRESENTEIE COM AFETO
+      </small>
+      <h2>
+       Caixas especiais para surpreender.
+      </h2>
+      <a href="galeria.html">
+       Ver inspirações →
+      </a>
+     </div>
+    </div>
+    <div class="slide-controles">
+     <button aria-label="Slide anterior" id="anterior">
+      ←
+     </button>
+     <div class="indicadores" id="indicadores">
+     </div>
+     <button aria-label="Próximo slide" id="proximo">
+      →
+     </button>
+    </div>
+   </section>
+   <section class="secao destaque revelar">
+    <div class="cabecalho-secao">
+     <div>
+      <p class="sobretitulo">
+       Escolhas especiais
+      </p>
+      <h2>
+       Favoritos da temporada
+      </h2>
+     </div>
+     <a class="link-seta" href="produtos.html">
+      Ver catálogo completo →
+     </a>
+    </div>
+    <div class="grade-produtos grade-destaques" id="destaques">
+    </div>
+   </section>
+   <section class="banner-chamada">
+    <div>
+     <p class="sobretitulo">
+      Presentes com afeto
+     </p>
+     <h2>
+      Compartilhe a magia
+      <br/>
+      em cada pedacinho.
+     </h2>
+     <a class="btn btn-claro" href="galeria.html">
+      Presentes
+     </a>
+    </div>
+    <div class="banner-ilustra">
+     <img alt="Caixa de bombons e biscoitos natalinos para presente" loading="lazy" src="img/imagem15.png"/>
+    </div>
+   </section>
+   <section class="contagem secao">
+    <p class="sobretitulo">
+     A data mais especial está chegando
+    </p>
+    <h2>
+     Contagem para o Natal
+    </h2>
+    <div class="contador" id="contagem">
+     Preparando a magia...
+    </div>
+   </section>
+  </main>
+  <footer class="rodape">
+   <div>
+    <a class="marca marca-rodape" href="index.html">
+     ✦ Christmas
+     <b>
+      Haven
+     </b>
+    </a>
+    <p>
+     Pequenos momentos, grandes sabores.
+    </p>
+   </div>
+   <div>
+    <strong>
+     Atendimento
+    </strong>
+    <p>
+     Seg a sáb · 8h às 20h
+    </p>
+    <p>
+     (19) 99999-6767
+    </p>
+   </div>
+   <div>
+    <strong>
+     Encontre a gente
+    </strong>
+    <p>
+     Instagram · @christmashaven
+    </p>
+    <p>
+     Hortolândia · SP
+    </p>
+   </div>
+   <p class="copyright">
+    © 2026 Christmas Haven Confeitaria
+   </p>
+  </footer>
+  <button aria-label="Voltar ao topo" id="topo">
+   ↑
+  </button>
+  <div aria-hidden="true" class="neve">
+  </div>
+  <script src="js/produtos.js">
+  </script>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>
+

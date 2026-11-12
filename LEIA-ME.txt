@@ -1,0 +1,27 @@
+CHRISTMAS HAVEN 
+CONFEITARIA NATALINA
+Turma: 1TIB
+
+LINKS:
+Site (GitHub Pages): 
+Repositório (GitHub): https://github.com/matheushbatista1/AV2-Christmas-Haven
+Vídeo (YouTube): https://youtu.be/bKcPWTI1Qdo?feature=shared
+
+RECURSOS JAVASCRIPT
+1. Slideshow automático com botões anterior/próximo e indicadores; lightbox na galeria.
+2. Efeito parallax aplicado à decoração do banner da Home durante a rolagem.
+3. Player de uma melodia instrumental natalina original, sintetizada diretamente pelo navegador, com opções para pausar, continuar, silenciar e fechar. Não utiliza YouTube nem depende de arquivos de áudio externos.
+4. Cards dinâmicos gerados pelo array de 50 objetos.
+5. Filtro por categoria e busca por nome.
+6. Carrinho/sacola com localStorage, quantidade e total.
+7. Contagem regressiva para o Natal.
+8. Validação do formulário.
+9. Menu responsivo.
+10. Efeito de neve.
+11. Identidade visual em modo escuro, com fundo azul-noturno e detalhes em verde-gelo e rosé.
+12. Animação ao rolar e botão voltar ao topo.
+
+INTEGRANTES
+Alícia Eduarda
+Matheus Henrique 
+Henrique Fernandes

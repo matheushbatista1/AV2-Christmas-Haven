@@ -1,0 +1,154 @@
+:root{--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);background:#0b1020;color:#fff;background-image:radial-gradient(ellipse at 12% 0%,#26334d55,transparent 38%),radial-gradient(ellipse at 88% 35%,#33253d40,transparent 34%);background-attachment:fixed;font-size:19px;line-height:1.6}
+a{color:inherit;text-decoration:none}
+button{font:inherit;font-size:17px;font-weight:700}
+input,select,textarea{font:inherit}
+.topo{height:84px;padding:0 max(5vw,24px);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20;background:#0d1424ed;border-bottom:1px solid #a9d8cf20;box-shadow:0 8px 30px #03071255;backdrop-filter:blur(16px)}
+.marca{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:24px;line-height:1;color:#f2edf4}
+.marca b,.menu a:hover,.menu a.ativo{color:#e58ca2}
+.marca small{display:block;font:700 12px var(--sans);letter-spacing:2px;margin-top:6px;color:#a9d8cf}
+.marca-icone{font-size:37px;color:#e7bd83}
+.menu{display:flex;gap:34px}
+.menu a{position:relative;padding:12px 0;color:#f0f3f9;font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.8px}
+.menu a.ativo:after,.menu a:hover:after{content:'';position:absolute;bottom:3px;left:0;width:100%;height:2px;background:#a9d8cf}
+.btn-menu{border:0;background:transparent;font-size:25px;cursor:pointer;display:none;color:#a9d8cf}
+.hero{position:relative;overflow:hidden;color:#fff;padding:100px max(9vw,28px) 75px;min-height:660px;background:linear-gradient(90deg,#050c19e0 0%,#081120b2 48%,#08112038 100%),url('../img/fundo-neve.webp') center 52% / cover no-repeat;border-bottom:1px solid #a9d8cf24}
+.hero-conteudo{max-width:600px;position:relative;z-index:2}
+.sobretitulo{letter-spacing:2.4px;text-transform:uppercase;margin:0 0 16px;color:#e7bd83;font-size:15px;font-weight:700}
+.hero h1,.titulo-pagina h1{font:700 54px/1.06 var(--serif);margin:0 0 15px;letter-spacing:-2px}
+.hero h1{font-size:clamp(48px,6vw,76px);margin-bottom:22px;text-shadow:0 2px 18px #00000073}
+.hero h1 em{font-weight:600;color:#a9d8cf}
+.hero-conteudo>p:not(.sobretitulo){line-height:1.8;max-width:475px;text-shadow:0 2px 18px #00000073;color:#eef1f8;font-size:22px}
+.hero-selo{position:absolute;top:40px;left:max(9vw,28px);font-size:13px;letter-spacing:2px;text-shadow:0 2px 12px #000;color:#e7bd83}
+.acoes{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border:0;cursor:pointer;transition:.25s;border-radius:999px;font-size:17px;font-weight:700;padding:16px 26px}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.06)}
+.btn-dourado{background:#e7bd83;color:#171827}
+.btn-contorno{border:1px solid #a9d8cf80;background:transparent;color:#e9f5f1}
+.btn-verde{background:#a9d8cf;color:#101b25}
+.btn-claro{background:#202b42;color:#d9eee9}
+.hero-decor{display:none}
+.hero-rodape{position:absolute;bottom:25px;left:9vw;font-size:13px;letter-spacing:2px;color:#e0eaf0}
+.faixa-info{display:flex;justify-content:center;gap:7vw;padding:25px;font-size:22px;background:#111a2b;color:#e7bd83;border-bottom:1px solid #a9d8cf18}
+.faixa-info span{font-size:14px;margin-left:7px;color:#e6ebf5}
+.secao{padding:85px max(7vw,24px)}
+.cabecalho-secao{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px}
+.cabecalho-secao h2,.secao h2{font:600 36px var(--serif);margin:0;color:#e9e7f0}
+.link-seta{font-size:15px;font-weight:700;color:#e58ca2}
+.grade-produtos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.card,.carrinho-resumo,.carrinho-box,.modal-conteudo,.contato form{background:linear-gradient(150deg,#1a263b,#131d30);color:#fff;border:1px solid #a9d8cf20;border-radius:16px;box-shadow:0 18px 50px #03071280}
+.card{transition:.3s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-7px);border-color:#e7bd8370;box-shadow:0 22px 55px #030712a0}
+.card img{width:100%;aspect-ratio:1.28;object-fit:cover;display:block;background:#202b40}
+.card-info{padding:18px}
+.tag-categoria{text-transform:uppercase;letter-spacing:1px;color:#a9d8cf;font-size:14px;font-weight:700}
+.card h3{font:600 24px/1.25 var(--serif);margin:8px 0;color:#fff}
+.card p{min-height:34px;color:#e3e8f3;font-size:17px;line-height:1.6}
+.preco{color:#e7bd83;font-size:24px;font-weight:700}
+.card-acoes{display:flex;gap:8px;margin-top:15px}
+.card-acoes button{flex:1;padding:10px 6px;font-size:13px}
+.btn-card{border:0;cursor:pointer;background:#a9d8cf;color:#101b25;border-radius:999px}
+.btn-detalhe{border:0;cursor:pointer;background:#27334b;color:#dcebe8;border-radius:999px}
+.banner-chamada{padding:65px 12%;display:flex;justify-content:space-between;align-items:center;overflow:hidden;background:linear-gradient(115deg,#69354c,#342842 60%,#1b3040);color:#fff;gap:40px}
+.banner-chamada h2{font:600 38px/1.2 var(--serif);margin:0 0 25px;color:#fff}
+.banner-ilustra{flex:0 0 42%;max-width:520px}
+.contagem{text-align:center;background:linear-gradient(130deg,#17253a,#222139)}
+.contagem h2{margin-bottom:20px;color:#f0eaf1}
+.contador{font:22px var(--serif);letter-spacing:1px;color:#e7bd83}
+.rodape{color:#e5e9df;padding:55px 8% 25px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px;background:#070c17;border-top:1px solid #a9d8cf24;font-size:17px}
+.rodape p{line-height:1.8;color:#b7c4b8}
+.rodape strong{font:18px var(--serif);color:#e7bd83}
+.copyright{grid-column:1/-1;border-top:1px solid #ffffff20;padding-top:20px;margin:0}
+.titulo-pagina{padding:85px 8% 65px;text-align:center;color:#fff;background:radial-gradient(circle at 80% 20%,#a9d8cf22,transparent 25%),linear-gradient(120deg,#17253a,#282139);border-bottom:1px solid #a9d8cf20}
+.titulo-pagina>p:last-child{font-size:18px;color:#e6ebf5}
+.catalogo{padding-top:50px}
+.filtros{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.busca{flex:1;display:flex;align-items:center;gap:10px;padding:0 15px;background:#151f32;border:1px solid #a9d8cf35;color:#fff;border-radius:12px}
+.busca input{border:0;outline:0;padding:14px 0;width:100%;background:transparent;color:#fff;font-size:18px}
+.filtros select{padding:14px;min-width:210px;background:#151f32;border:1px solid #a9d8cf35;color:#fff;border-radius:12px;font-size:18px}
+.carrinho-resumo{padding:13px 17px;font-size:14px;display:flex;gap:8px;align-items:center}
+.carrinho-resumo b,.contato-info b{color:#e7bd83}
+.contador-produtos{font-size:14px;color:#d3dae8;margin:0 0 20px}
+.vazio{text-align:center;padding:45px;color:#a9d8cf}
+.carrinho-box{margin-top:35px;padding:22px;display:flex;align-items:center;justify-content:space-between;border-left:4px solid #e7bd83}
+.carrinho-box p{font-size:15px;color:#d3dae8;margin-bottom:0}
+.carrinho-box .btn{color:#a9d8cf;border-color:#a9d8cf55}
+.modal,.lightbox{position:fixed;inset:0;display:none;place-items:center;z-index:50;padding:20px;background:#050914e8}
+.modal.aberto,.lightbox.aberto{display:grid}
+.modal-conteudo{max-width:500px;width:100%;padding:35px;position:relative;background:#182338}
+.fechar{position:absolute;right:15px;top:10px;border:0;background:none;font-size:30px;cursor:pointer;color:#fff}
+.modal-conteudo img{width:100%;max-height:250px;object-fit:cover}
+.modal-conteudo h2{font:28px var(--serif);color:#f0eaf1}
+.historia{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+.historia p:not(.sobretitulo){line-height:1.9;font-size:18px;color:#e3e8f3}
+.historia-ilustra{min-height:330px;display:grid;place-items:center;background:radial-gradient(circle at 50% 45%,#a9d8cf2b,transparent 35%),linear-gradient(135deg,#1a2a40,#30233a);padding:0;overflow:hidden;border-radius:16px}
+.valores{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.valores article{padding:30px;text-align:center;border:1px solid #a9d8cf30;border-radius:16px;background:#151f32}
+.valores article>span{font-size:35px;color:#e7bd83}
+.valores h3{font:22px var(--serif);color:#f0eaf1}
+.valores p{font-size:15px;line-height:1.7;color:#e3e8f3}
+.equipe{text-align:center}
+.equipe .contagem{margin-top:50px;padding:35px}
+.galeria{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.foto{grid-column:span 2;aspect-ratio:16/9;padding:0;border:0;background:#202b40;cursor:pointer;transition:.25s;position:relative;overflow:hidden}
+.foto:hover{transform:scale(1.02)}
+.foto img{width:100%;height:100%;object-fit:cover;display:block}
+.foto b{position:absolute;left:0;right:0;bottom:0;padding:38px 18px 14px;background:linear-gradient(transparent,#050914d9);font:700 26px var(--serif);color:#fff;text-align:left}
+.foto-grande,.foto-grande+.foto{grid-column:span 3}
+.oferta{display:flex;justify-content:space-between;align-items:center;background:#151f32;border:1px solid #a9d8cf20;border-radius:18px}
+.oferta p:not(.sobretitulo){max-width:460px;line-height:1.7;color:#e0e6f1}
+.oferta-img{width:min(540px,48%);aspect-ratio:16/9;object-fit:cover;border-radius:16px}
+.lightbox img{max-width:92vw;max-height:86vh;border-radius:12px}
+.lightbox button{position:absolute;right:35px;top:25px;background:none;color:#fff;border:0;font-size:40px;cursor:pointer}
+.contato{display:grid;grid-template-columns:1.2fr .8fr;gap:9%;align-items:start}
+.contato form{padding:35px;background:#151f32}
+.contato form h2{font-size:29px;margin-bottom:25px}
+.contato label{display:block;margin:16px 0;color:#f0f3f9;font-size:18px;font-weight:600}
+.contato input,.contato select,.contato textarea{display:block;width:100%;padding:13px;margin-top:8px;color:#fff;background:#0e1728;border:1px solid #a9d8cf35;border-radius:9px;outline-color:#e7bd83;font-size:18px}
+.contato-info h2{font-size:35px;margin-bottom:30px;color:#f0eaf1}
+.contato-info>div{display:flex;gap:16px;align-items:start;margin:22px 0}
+.contato-info span{font-size:25px;color:#e7bd83}
+.contato-info p{font-size:15px;line-height:1.7;margin:0;color:#e3e8f3}
+#mensagem-form{font-size:15px;color:#e58ca2}
+#topo{display:none;position:fixed;right:22px;bottom:22px;border:0;border-radius:50%;width:42px;height:42px;font-size:24px;cursor:pointer;z-index:15;background:#e7bd83;color:#111827;box-shadow:0 8px 25px #03071280}
+.neve{pointer-events:none;position:fixed;inset:0;z-index:10;overflow:hidden}
+.floco{position:absolute;top:-20px;font-size:15px;animation:cair linear infinite;color:#d8edf0;text-shadow:0 0 5px #a9d8cf}
+.revelar{opacity:0;transform:translateY(24px);transition:.7s}
+.revelar.visivel{opacity:1;transform:none}
+.slideshow{padding-top:35px;padding-bottom:35px}
+.slide{display:none;align-items:center;justify-content:center;gap:45px;min-height:245px;padding:35px;color:#fff;background:linear-gradient(110deg,#1b2c43,#33243b);border:1px solid #a9d8cf25;border-radius:18px}
+.slide.ativo{display:flex;animation:aparecer .6s}
+.slide>img{width:min(400px,42%);aspect-ratio:16/9;object-fit:cover;border-radius:14px;box-shadow:0 12px 30px #0006}
+.slide small{font-size:13px;letter-spacing:2px;color:#e7bd83}
+.slide h2{font:30px var(--serif);margin:10px 0 15px}
+.slide a{font-size:15px;font-weight:700;color:#e7bd83}
+.slide-controles{display:flex;justify-content:center;align-items:center;gap:18px;margin-top:18px}
+.slide-controles button{border:1px solid #a9d8cf;background:transparent;width:34px;height:34px;border-radius:50%;cursor:pointer;color:#a9d8cf}
+.indicadores{display:flex;gap:8px}
+.indicadores button{width:8px;height:8px;padding:0;border:0;background:#c8b995}
+.indicadores button.ativo{background:#e58ca2}
+.painel-musica{position:fixed;right:22px;bottom:76px;z-index:30;width:min(350px,calc(100vw - 28px));padding:14px;box-shadow:0 12px 35px #10251c45;background:#151f32;border:1px solid #a9d8cf55;color:#fff;border-radius:16px}
+.musica-acoes{display:flex;align-items:center;gap:6px;justify-content:center;margin-bottom:10px}
+.musica-acoes button{border:1px solid #a9d8cf55;padding:7px 10px;cursor:pointer;font-size:14px;background:#26344b;color:#fff;border-radius:999px}
+.musica-acoes #btn-fechar-musica{font-size:22px;padding:2px 9px}
+.visual-musica{height:112px;display:flex;align-items:center;justify-content:center;gap:18px;overflow:hidden;font-size:38px;background:linear-gradient(135deg,#263b50,#49314b);color:#e7bd83;border-radius:12px}
+.visual-musica span:nth-child(2),.visual-musica span:nth-child(4){transform:translateY(-12px);font-size:48px}
+.visual-musica span:nth-child(odd){animation:notaFlutuar 1.4s ease-in-out infinite alternate}
+.btn-contorno:hover{background:#a9d8cf18}
+.busca input::placeholder,.contato input::placeholder,.contato textarea::placeholder{color:#b4bed1}
+.filtros select option{background:#151f32;color:#fff}
+.galeria .foto{border-radius:16px}
+::selection{background:#a9d8cf55;color:#fff}
+.rodape a{font-size:17px}
+.modal-conteudo p{font-size:18px}
+.banner-ilustra img{display:block;width:100%;height:auto;border-radius:16px;box-shadow:0 15px 30px #00000050}
+.historia-ilustra img{display:block;width:100%;height:100%;min-height:330px;object-fit:cover}
+.equipe-grade{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin:35px auto}
+.membro{margin:0;width:200px;text-align:center}
+.membro-foto{width:180px;height:180px;margin:0 auto 14px;border-radius:50%;background-repeat:no-repeat;background-size:var(--z) auto;background-position:var(--x) var(--y);border:3px solid #e7bd83;box-shadow:0 8px 22px #00000040}
+.membro figcaption{font:600 20px var(--serif);color:#e9e7f0}
+@keyframes cair{to{transform:translateY(110vh) rotate(360deg)}}
+@keyframes aparecer{from{opacity:0;transform:translateY(8px)}}
+@keyframes notaFlutuar{to{transform:translateY(-9px)}}

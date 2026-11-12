@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="#173d2c" name="theme-color"/>
+  <title>
+   Produtos | Christmas Haven
+  </title>
+  <link href="img/favicon.svg" rel="icon"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/responsivo.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="topo">
+   <a class="marca" href="index.html">
+    <span class="marca-icone">
+     ✦
+    </span>
+    <span>
+     Christmas
+     <b>
+      Haven
+     </b>
+     <small>
+      CONFEITARIA NATALINA
+     </small>
+    </span>
+   </a>
+   <button aria-label="Abrir menu" class="btn-menu">
+    ☰
+   </button>
+   <nav class="menu">
+    <a href="index.html">
+     Início
+    </a>
+    <a href="produtos.html">
+     Produtos
+    </a>
+    <a href="sobre.html">
+     História
+    </a>
+    <a href="galeria.html">
+     Galeria
+    </a>
+    <a href="contato.html">
+     Contato
+    </a>
+   </nav>
+  </header>
+  <main>
+   <section class="titulo-pagina">
+    <p class="sobretitulo">
+     Nosso catálogo
+    </p>
+    <h1>
+     Delícias de Natal
+    </h1>
+    <p>
+     Encontre seu próximo momento favorito.
+    </p>
+   </section>
+   <section class="secao catalogo">
+    <div class="filtros">
+     <label class="busca">
+      ⌕
+      <input id="busca" placeholder="Buscar um doce..." type="search"/>
+     </label>
+     <select aria-label="Filtrar por categoria" id="categoria">
+      <option value="todas">
+       Todas as categorias
+      </option>
+      <option>
+       Panetones e Clássicos
+      </option>
+      <option>
+       Biscoitos
+      </option>
+      <option>
+       Bolos e Tortas
+      </option>
+      <option>
+       Sobremesas
+      </option>
+      <option>
+       Doces e Chocolates
+      </option>
+     </select>
+     <div class="carrinho-resumo">
+      🛍
+      <span id="qtd-carrinho">
+       0
+      </span>
+      itens
+      <b id="total-carrinho">
+       R$ 0,00
+      </b>
+     </div>
+    </div>
+    <p class="contador-produtos" id="contador">
+     Mostrando 50 de 50 produtos
+    </p>
+    <div class="grade-produtos" id="lista-produtos">
+    </div>
+    <div class="vazio" hidden="" id="mensagem-vazia">
+     ❄ Nenhum produto encontrado. Tente outra busca.
+    </div>
+    <div class="carrinho-box">
+     <div>
+      <strong>
+       Sua sacola natalina
+      </strong>
+      <p id="itens-carrinho">
+       Adicione seus favoritos para montar sua sacola.
+      </p>
+     </div>
+     <button class="btn btn-contorno" id="limpar-carrinho">
+      Limpar
+     </button>
+    </div>
+   </section>
+  </main>
+  <div aria-hidden="true" class="modal" id="modal">
+   <div class="modal-conteudo">
+    <button class="fechar" id="fechar-modal">
+     ×
+    </button>
+    <div id="modal-detalhe">
+    </div>
+   </div>
+  </div>
+  <footer class="rodape">
+   <div>
+    <a class="marca marca-rodape" href="index.html">
+     ✦ Christmas
+     <b>
+      Haven
+     </b>
+    </a>
+    <p>
+     Pequenos momentos, grandes sabores.
+    </p>
+   </div>
+   <div>
+    <strong>
+     Atendimento
+    </strong>
+    <p>
+     Seg a sáb · 8h às 20h
+    </p>
+    <p>
+     (19) 99999-6767
+    </p>
+   </div>
+   <div>
+    <strong>
+     Encontre a gente
+    </strong>
+    <p>
+     Instagram · @christmashaven
+    </p>
+    <p>
+     Hortolândia · SP
+    </p>
+   </div>
+   <p class="copyright">
+    © 2026 Christmas Haven Confeitaria
+   </p>
+  </footer>
+  <button aria-label="Voltar ao topo" id="topo">
+   ↑
+  </button>
+  <div aria-hidden="true" class="neve">
+  </div>
+  <script src="js/produtos.js">
+  </script>
+  <script src="js/script.js">
+  </script>
+ </body>
+</html>
+
